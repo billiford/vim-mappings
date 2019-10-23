@@ -10,10 +10,8 @@ vmap K $%
 noremap <c-k> $%
 set relativenumber
 
-" Run GoCoverageClear on 'noh'
 :cmap noh noh<bar>GoCoverageClear
 
-" JavaScript stuff
 let g:airline_extensions = ['branch', 'netrw', 'ale', 'tabline']
 
 let g:neoformat_basic_format_retab = 1
@@ -21,3 +19,15 @@ let g:neoformat_basic_format_trim = 1
 let g:neoformat_enabled_javascript = ['prettier-eslint', 'prettier', 'eslint']
 
 autocmd BufWritePre *.js Neoformat
+
+" rego stuff
+" let g:formatdef_rego = '"opa fmt"'
+" let g:formatters_rego = ['rego']
+" let g:autoformat_autoindent = 0
+" let g:autoformat_retab = 0
+" au BufWritePre *.rego Autoformat
+" let g:autoformat_verbosemode = 1
+
+colorscheme hybrid
+
+autocmd BufNewFile,BufRead Spinnakerfile set syntax=json
