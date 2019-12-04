@@ -1,3 +1,4 @@
+```bash
 " Use ctrl-[hjkl] to select the active split!
 " nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
@@ -31,3 +32,4 @@ autocmd BufWritePre *.js Neoformat
 colorscheme hybrid
 
 autocmd BufNewFile,BufRead Spinnakerfile set syntax=json
+```
