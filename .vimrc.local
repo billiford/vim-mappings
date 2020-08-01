@@ -8,7 +8,7 @@ nmap <silent> Y "*y
 nmap <silent> P o<Esc>"*p
 vmap K $%
 noremap <c-k> $%
-noremap <c-j> V$%y$%pO<Esc>jci"
+noremap <c-i> V$%y$%pO<Esc>jci"
 set relativenumber
 
 :cmap noh noh<bar>GoCoverageClear
